@@ -78,10 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Michelle Borges | Psicóloga Clínica" },
-      { name: "description", content: "Psicoterapia online em TCC para jovens, adultos e casais com Michelle Borges, CRP 05/76136." },
+      {
+        name: "description",
+        content:
+          "Psicoterapia online em TCC para jovens, adultos e casais com Michelle Borges, CRP 05/76136.",
+      },
       { name: "author", content: "Michelle Borges" },
       { property: "og:title", content: "Michelle Borges | Psicóloga Clínica" },
-      { property: "og:description", content: "Atendimento psicológico online com acolhimento, clareza e autonomia." },
+      {
+        property: "og:description",
+        content: "Atendimento psicológico online com acolhimento, clareza e autonomia.",
+      },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Michelle Borges Psicóloga" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -94,7 +101,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
