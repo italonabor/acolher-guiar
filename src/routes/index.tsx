@@ -154,17 +154,23 @@ function Index() {
           </span>
         </a>
         <nav
-          className="hidden items-center gap-7 text-xs font-bold text-foreground md:flex"
+          className="hidden items-center gap-5 text-xs font-bold text-foreground md:flex lg:gap-7"
           aria-label="Navegação principal"
         >
-          <a href="#terapia" className="hover:text-primary">
+          <a href="#queixas" className="transition-colors hover:text-primary">
+            O que atendo
+          </a>
+          <a href="#terapia" className="transition-colors hover:text-primary">
             Para quem é
           </a>
-          <a href="#abordagem" className="hover:text-primary">
+          <a href="#abordagem" className="transition-colors hover:text-primary">
             A abordagem
           </a>
-          <a href="#sobre" className="hover:text-primary">
+          <a href="#sobre" className="transition-colors hover:text-primary">
             Sobre mim
+          </a>
+          <a href="#como-funciona" className="transition-colors hover:text-primary">
+            Como funciona
           </a>
         </nav>
         <a
@@ -374,7 +380,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="py-20 sm:py-28" aria-labelledby="online-title">
+      <section id="como-funciona" className="py-20 sm:py-28" aria-labelledby="online-title">
         <div className="section-shell">
           <div className="text-center">
             <p className="eyebrow text-primary">Atendimento online</p>
