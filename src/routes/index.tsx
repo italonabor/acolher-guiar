@@ -213,6 +213,32 @@ function Index() {
         </div>
       </section>
 
+      <section id="queixas" className="border-y border-border bg-surface py-16 sm:py-20">
+        <div className="section-shell">
+          <p className="eyebrow text-primary">O que eu atendo</p>
+          <h2 className="mt-5 max-w-3xl text-3xl font-semibold leading-tight text-primary sm:text-4xl">
+            Queixas e questões tratadas na terapia
+          </h2>
+          <ul className="mt-9 flex flex-wrap gap-3">
+            {conditions.map((item) => (
+              <li
+                key={item}
+                className="rounded-full border border-rose bg-rose-soft px-4 py-2 text-sm font-medium text-foreground"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 max-w-2xl text-sm leading-7">
+            Não encontrou a sua questão aqui? Me chame no WhatsApp e conversamos sobre o seu caso
+            com tranquilidade.
+          </p>
+          <div className="mt-7">
+            <WhatsAppButton>Falar com a psicóloga agora</WhatsAppButton>
+          </div>
+        </div>
+      </section>
+
       <section id="terapia" className="bg-sage py-20 sm:py-28">
         <div className="section-shell grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
