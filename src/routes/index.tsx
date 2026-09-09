@@ -65,6 +65,19 @@ const struggles = [
   "Sente que precisa retomar as rédeas da própria vida, mas não sabe por onde começar?",
 ];
 
+const conditions = [
+  "Ansiedade e crises de ansiedade",
+  "Síndrome do pânico e fobias",
+  "Depressão e desânimo persistente",
+  "Estresse, esgotamento e burnout",
+  "Pensamentos obsessivos e TOC",
+  "Baixa autoestima e autocrítica excessiva",
+  "Dependência emocional e relacionamentos difíceis",
+  "Conflitos conjugais e terapia de casal",
+  "Luto, separações e mudanças de vida",
+  "Insônia e dificuldade de relaxar",
+];
+
 const steps = [
   {
     number: "01",
