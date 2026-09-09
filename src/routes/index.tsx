@@ -8,8 +8,8 @@ import {
   MessageCircle,
   Video,
 } from "lucide-react";
-import consultorioPhoto from "@/assets/michelle-borges-consultorio.png.asset.json";
-import portraitPhoto from "@/assets/michelle-borges-retrato.png.asset.json";
+const consultorioPhoto = "/michelle-borges-consultorio.jpg";
+const portraitPhoto = "/michelle-borges-retrato.jpg";
 
 const whatsappUrl =
   "https://api.whatsapp.com/send/?phone=5524999405286&text=Oi%25252C+gostaria+de+mais+informa%2525C3%2525A7%2525C3%2525B5es+sobre+o+atendimento+&type=phone_number&app_absent=0&utm_source=site";
