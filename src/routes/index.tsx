@@ -186,24 +186,24 @@ function Index() {
 
       <section
         id="inicio"
-        className="section-shell grid items-start gap-10 pt-4 pb-12 sm:pt-6 sm:pb-16 lg:grid-cols-[1.12fr_0.88fr] lg:items-start lg:gap-10 lg:pt-6 lg:pb-16 xl:grid-cols-2 xl:gap-14"
+        className="section-shell grid items-start gap-10 pt-6 pb-16 sm:pt-8 sm:pb-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-12 lg:pt-10 lg:pb-20 xl:grid-cols-2 xl:gap-16 xl:pt-12 xl:pb-24"
       >
         <div className="w-full max-w-xl lg:pt-1">
-          <p className="eyebrow mb-4 flex items-center gap-3 text-primary">
+          <p className="eyebrow mb-5 flex items-center gap-3 text-primary">
             <span className="h-px w-8 bg-primary" /> Psicoterapia online · TCC
           </p>
-          <h1 className="text-[clamp(2.15rem,3.8vw,3.75rem)] font-semibold leading-[1.05] text-primary">
+          <h1 className="text-[clamp(2.45rem,4.4vw,4.4rem)] font-semibold leading-[1.0] text-primary">
             Acolher é compreender a sua história e ajudar a construir novos caminhos.
           </h1>
-          <p className="mt-5 text-sm leading-relaxed text-foreground sm:text-base sm:leading-7">
+          <p className="mt-6 text-base leading-relaxed text-foreground sm:text-lg sm:leading-8">
             Você não precisa enfrentar suas angústias em silêncio. Atendimento psicológico online
             especializado em Terapia Cognitivo-Comportamental para te guiar rumo à autonomia, alívio
             da ansiedade e bem-estar emocional.
           </p>
-          <p className="mt-4 font-display text-xl font-semibold text-primary sm:text-2xl">
+          <p className="mt-5 font-display text-xl font-semibold text-primary sm:text-2xl lg:text-[1.7rem]">
             Dê o primeiro passo hoje: fale comigo agora pelo WhatsApp.
           </p>
-          <div className="mt-5 flex flex-wrap items-center gap-3.5">
+          <div className="mt-6 flex flex-wrap items-center gap-4">
             <WhatsAppButton>Agendar minha sessão pelo WhatsApp</WhatsAppButton>
             <a
               href="#queixas"
@@ -212,22 +212,22 @@ function Index() {
               Ver o que eu atendo
             </a>
           </div>
-          <p className="mt-4 text-xs font-semibold text-muted-foreground">
+          <p className="mt-5 text-xs font-semibold text-muted-foreground">
             Atendimento online para todo o Brasil · Resposta rápida no WhatsApp
           </p>
         </div>
-        <div className="relative mx-auto w-full max-w-[22rem] pb-5 pr-5 sm:max-w-[25rem] lg:mx-0 lg:ml-auto lg:max-w-[25rem] xl:max-w-[27rem] lg:self-start">
+        <div className="relative mx-auto w-full max-w-[24rem] pb-5 pr-5 sm:max-w-[27rem] lg:mx-0 lg:ml-auto lg:max-w-[28rem] xl:max-w-[30rem] lg:self-start">
           <img
             src={consultorioPhoto}
             alt="Psicóloga Michelle Borges em seu consultório"
-            className="photo-frame aspect-[4/5] w-full rounded-t-[8rem] sm:rounded-t-[10rem] object-cover object-center max-h-[min(32rem,calc(100vh-11rem))]"
+            className="photo-frame aspect-[4/5] w-full rounded-t-[9rem] sm:rounded-t-[11rem] object-cover object-center max-h-[min(37rem,calc(100vh-8rem))]"
             fetchPriority="high"
           />
-          <div className="absolute bottom-0 left-[-0.5rem] rounded-md bg-surface px-4 py-3 soft-shadow sm:left-[-1.5rem] sm:px-5 sm:py-4">
-            <p className="font-display text-lg font-semibold text-primary sm:text-xl">
+          <div className="absolute bottom-0 left-[-0.5rem] rounded-md bg-surface px-5 py-4 soft-shadow sm:left-[-1.5rem] sm:px-6 sm:py-5">
+            <p className="font-display text-lg font-semibold text-primary sm:text-2xl">
               Escuta com acolhimento
             </p>
-            <p className="mt-0.5 text-xs text-muted-foreground">Clareza para seguir no seu tempo</p>
+            <p className="mt-1 text-xs text-muted-foreground sm:text-sm">Clareza para seguir no seu tempo</p>
           </div>
         </div>
       </section>
