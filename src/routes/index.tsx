@@ -414,6 +414,16 @@ function Index() {
           </div>
         </div>
       </footer>
+
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Conversar no WhatsApp"
+        className="pressable fixed bottom-5 right-5 z-50 grid size-14 place-items-center rounded-full bg-primary text-primary-foreground soft-shadow hover:bg-foreground"
+      >
+        <MessageCircle className="size-7" aria-hidden="true" />
+      </a>
     </main>
   );
 }
