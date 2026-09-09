@@ -8,8 +8,8 @@ import {
   MessageCircle,
   Video,
 } from "lucide-react";
-import consultorioPhoto from "@/assets/michelle-borges-consultorio.png.asset.json";
-import portraitPhoto from "@/assets/michelle-borges-retrato.png.asset.json";
+const consultorioPhoto = "/michelle-borges-consultorio.jpg";
+const portraitPhoto = "/michelle-borges-retrato.jpg";
 
 const whatsappUrl =
   "https://api.whatsapp.com/send/?phone=5524999405286&text=Oi%25252C+gostaria+de+mais+informa%2525C3%2525A7%2525C3%2525B5es+sobre+o+atendimento+&type=phone_number&app_absent=0&utm_source=site";
@@ -63,6 +63,19 @@ const struggles = [
   "Sente uma enorme dificuldade em dizer “não” por medo de desagradar ou ser abandonado?",
   "Acha difícil relaxar e estar presente no momento atual, sentindo-se sempre em alerta?",
   "Sente que precisa retomar as rédeas da própria vida, mas não sabe por onde começar?",
+];
+
+const conditions = [
+  "Ansiedade e crises de ansiedade",
+  "Síndrome do pânico e fobias",
+  "Depressão e desânimo persistente",
+  "Estresse, esgotamento e burnout",
+  "Pensamentos obsessivos e TOC",
+  "Baixa autoestima e autocrítica excessiva",
+  "Dependência emocional e relacionamentos difíceis",
+  "Conflitos conjugais e terapia de casal",
+  "Luto, separações e mudanças de vida",
+  "Insônia e dificuldade de relaxar",
 ];
 
 const steps = [
@@ -168,16 +181,25 @@ function Index() {
             especializado em Terapia Cognitivo-Comportamental para te guiar rumo à autonomia, alívio
             da ansiedade e bem-estar emocional.
           </p>
-          <div className="mt-9">
+          <p className="mt-6 font-display text-2xl font-semibold text-primary sm:text-3xl">
+            Dê o primeiro passo hoje: fale comigo agora pelo WhatsApp.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-4">
             <WhatsAppButton>Agendar minha sessão pelo WhatsApp</WhatsAppButton>
+            <a
+              href="#queixas"
+              className="text-sm font-bold text-primary underline underline-offset-4 hover:text-foreground"
+            >
+              Ver o que eu atendo
+            </a>
           </div>
           <p className="mt-5 text-xs font-semibold text-muted-foreground">
-            Atendimento online para todo o Brasil
+            Atendimento online para todo o Brasil · Resposta rápida no WhatsApp
           </p>
         </div>
         <div className="relative mx-auto w-full max-w-[33rem] pb-5 pr-5">
           <img
-            src={consultorioPhoto.url}
+            src={consultorioPhoto}
             alt="Psicóloga Michelle Borges em seu consultório"
             className="photo-frame aspect-[4/5] w-full rounded-t-[10rem] object-cover object-center"
             fetchPriority="high"
@@ -187,6 +209,32 @@ function Index() {
               Escuta com acolhimento
             </p>
             <p className="mt-1 text-xs text-muted-foreground">Clareza para seguir no seu tempo</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="queixas" className="border-y border-border bg-surface py-16 sm:py-20">
+        <div className="section-shell">
+          <p className="eyebrow text-primary">O que eu atendo</p>
+          <h2 className="mt-5 max-w-3xl text-3xl font-semibold leading-tight text-primary sm:text-4xl">
+            Queixas e questões tratadas na terapia
+          </h2>
+          <ul className="mt-9 flex flex-wrap gap-3">
+            {conditions.map((item) => (
+              <li
+                key={item}
+                className="rounded-full border border-rose bg-rose-soft px-4 py-2 text-sm font-medium text-foreground"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 max-w-2xl text-sm leading-7">
+            Não encontrou a sua questão aqui? Me chame no WhatsApp e conversamos sobre o seu caso
+            com tranquilidade.
+          </p>
+          <div className="mt-7">
+            <WhatsAppButton>Falar com a psicóloga agora</WhatsAppButton>
           </div>
         </div>
       </section>
@@ -273,7 +321,7 @@ function Index() {
         <div className="section-shell grid items-center gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div className="relative mx-auto w-full max-w-[27rem]">
             <img
-              src={portraitPhoto.url}
+              src={portraitPhoto}
               alt="Retrato profissional da psicóloga Michelle Borges"
               loading="lazy"
               className="aspect-[4/5] w-full rounded-t-[9rem] object-cover object-top"
@@ -366,6 +414,16 @@ function Index() {
           </div>
         </div>
       </footer>
+
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Conversar no WhatsApp"
+        className="pressable fixed bottom-5 right-5 z-50 grid size-14 place-items-center rounded-full bg-primary text-primary-foreground soft-shadow hover:bg-foreground"
+      >
+        <MessageCircle className="size-7" aria-hidden="true" />
+      </a>
     </main>
   );
 }
