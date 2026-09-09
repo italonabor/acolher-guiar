@@ -5,6 +5,7 @@ import {
   Check,
   Instagram,
   LockKeyhole,
+  MessageCircle,
   Video,
 } from "lucide-react";
 const consultorioPhoto = "/michelle-borges-consultorio.jpg";
