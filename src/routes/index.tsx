@@ -186,24 +186,24 @@ function Index() {
 
       <section
         id="inicio"
-        className="section-shell grid min-h-[calc(100vh-5rem)] items-center gap-12 pb-16 pt-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-14"
+        className="section-shell grid items-start gap-10 pt-4 pb-12 sm:pt-6 sm:pb-16 lg:grid-cols-[1.12fr_0.88fr] lg:items-start lg:gap-10 lg:pt-6 lg:pb-16 xl:grid-cols-2 xl:gap-14"
       >
-        <div className="max-w-2xl">
-          <p className="eyebrow mb-6 flex items-center gap-3 text-primary">
+        <div className="w-full max-w-xl lg:pt-1">
+          <p className="eyebrow mb-4 flex items-center gap-3 text-primary">
             <span className="h-px w-8 bg-primary" /> Psicoterapia online · TCC
           </p>
-          <h1 className="text-[clamp(3rem,6vw,5.7rem)] font-semibold leading-[0.94] text-primary">
+          <h1 className="text-[clamp(2.15rem,3.8vw,3.75rem)] font-semibold leading-[1.05] text-primary">
             Acolher é compreender a sua história e ajudar a construir novos caminhos.
           </h1>
-          <p className="mt-7 max-w-xl text-base leading-8 text-foreground sm:text-lg">
+          <p className="mt-5 text-sm leading-relaxed text-foreground sm:text-base sm:leading-7">
             Você não precisa enfrentar suas angústias em silêncio. Atendimento psicológico online
             especializado em Terapia Cognitivo-Comportamental para te guiar rumo à autonomia, alívio
             da ansiedade e bem-estar emocional.
           </p>
-          <p className="mt-6 font-display text-2xl font-semibold text-primary sm:text-3xl">
+          <p className="mt-4 font-display text-xl font-semibold text-primary sm:text-2xl">
             Dê o primeiro passo hoje: fale comigo agora pelo WhatsApp.
           </p>
-          <div className="mt-6 flex flex-wrap items-center gap-4">
+          <div className="mt-5 flex flex-wrap items-center gap-3.5">
             <WhatsAppButton>Agendar minha sessão pelo WhatsApp</WhatsAppButton>
             <a
               href="#queixas"
@@ -212,27 +212,27 @@ function Index() {
               Ver o que eu atendo
             </a>
           </div>
-          <p className="mt-5 text-xs font-semibold text-muted-foreground">
+          <p className="mt-4 text-xs font-semibold text-muted-foreground">
             Atendimento online para todo o Brasil · Resposta rápida no WhatsApp
           </p>
         </div>
-        <div className="relative mx-auto w-full max-w-[33rem] pb-5 pr-5">
+        <div className="relative mx-auto w-full max-w-[22rem] pb-5 pr-5 sm:max-w-[25rem] lg:mx-0 lg:ml-auto lg:max-w-[25rem] xl:max-w-[27rem] lg:self-start">
           <img
             src={consultorioPhoto}
             alt="Psicóloga Michelle Borges em seu consultório"
-            className="photo-frame aspect-[4/5] w-full rounded-t-[10rem] object-cover object-center"
+            className="photo-frame aspect-[4/5] w-full rounded-t-[8rem] sm:rounded-t-[10rem] object-cover object-center max-h-[min(32rem,calc(100vh-11rem))]"
             fetchPriority="high"
           />
-          <div className="absolute bottom-0 left-[-1rem] rounded-md bg-surface px-5 py-4 soft-shadow sm:left-[-2.5rem]">
-            <p className="font-display text-xl font-semibold text-primary">
+          <div className="absolute bottom-0 left-[-0.5rem] rounded-md bg-surface px-4 py-3 soft-shadow sm:left-[-1.5rem] sm:px-5 sm:py-4">
+            <p className="font-display text-lg font-semibold text-primary sm:text-xl">
               Escuta com acolhimento
             </p>
-            <p className="mt-1 text-xs text-muted-foreground">Clareza para seguir no seu tempo</p>
+            <p className="mt-0.5 text-xs text-muted-foreground">Clareza para seguir no seu tempo</p>
           </div>
         </div>
       </section>
 
-      <section id="queixas" className="border-y border-border bg-surface py-16 sm:py-20">
+      <section id="queixas" className="border-y border-border bg-surface py-16 sm:py-24">
         <div className="section-shell">
           <p className="eyebrow text-primary">O que eu atendo</p>
           <h2 className="mt-5 max-w-3xl text-3xl font-semibold leading-tight text-primary sm:text-4xl">
@@ -258,19 +258,19 @@ function Index() {
         </div>
       </section>
 
-      <section id="terapia" className="bg-sage py-20 sm:py-28">
-        <div className="section-shell grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-          <div>
+      <section id="terapia" className="bg-sage py-16 sm:py-24">
+        <div className="section-shell grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="w-full max-w-xl">
             <p className="eyebrow text-foreground/70">Para quem é a terapia?</p>
             <h2 className="mt-5 text-4xl font-semibold leading-tight sm:text-5xl">
               Você se identifica com alguma destas situações?
             </h2>
-            <p className="mt-7 max-w-md border-l border-foreground/40 pl-5 text-sm leading-7">
+            <p className="mt-7 border-l border-foreground/40 pl-5 text-sm leading-7">
               Não existem respostas certas. Apenas um convite para olhar com gentileza para o que
               você tem vivido.
             </p>
           </div>
-          <div>
+          <div className="w-full">
             <ul className="divide-y divide-foreground/20 border-y border-foreground/20">
               {struggles.map((item) => (
                 <li
@@ -294,7 +294,7 @@ function Index() {
         </div>
       </section>
 
-      <section id="abordagem" className="py-20 sm:py-28">
+      <section id="abordagem" className="py-16 sm:py-24">
         <div className="section-shell">
           <div className="max-w-3xl">
             <p className="eyebrow text-primary">A abordagem</p>
@@ -306,7 +306,7 @@ function Index() {
             </p>
           </div>
           <div className="mt-12 grid gap-px overflow-hidden rounded-md border border-rose bg-rose lg:grid-cols-3">
-            <article className="bg-background p-8">
+            <article className="flex flex-col bg-background p-8">
               <Brain className="size-7 text-primary" aria-hidden="true" />
               <h3 className="mt-8 text-2xl font-semibold text-primary">Compreender</h3>
               <p className="mt-4 text-sm leading-7">
@@ -314,17 +314,15 @@ function Index() {
                 Juntos, identificamos como seus pensamentos afetam sentimentos e atitudes.
               </p>
             </article>
-            <article className="bg-background p-8">
-              <span className="grid size-7 place-items-center rounded-full border border-primary font-display font-bold text-primary">
-                ↗
-              </span>
+            <article className="flex flex-col bg-background p-8">
+              <ArrowUpRight className="size-7 text-primary" aria-hidden="true" />
               <h3 className="mt-8 text-2xl font-semibold text-primary">Desenvolver</h3>
               <p className="mt-4 text-sm leading-7">
                 Ao longo das sessões, você aprende técnicas de relaxamento, ferramentas para
                 questionar pensamentos automáticos e estratégias para lidar com a ansiedade.
               </p>
             </article>
-            <article className="bg-background p-8">
+            <article className="flex flex-col bg-background p-8">
               <Check className="size-7 text-primary" aria-hidden="true" />
               <h3 className="mt-8 text-2xl font-semibold text-primary">Transformar</h3>
               <p className="mt-4 text-sm leading-7">
@@ -336,27 +334,27 @@ function Index() {
         </div>
       </section>
 
-      <section id="sobre" className="border-y border-border bg-surface py-20 sm:py-28">
-        <div className="section-shell grid items-center gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-          <div className="relative mx-auto w-full max-w-[27rem]">
+      <section id="sobre" className="border-y border-border bg-surface py-16 sm:py-24">
+        <div className="section-shell grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="relative mx-auto w-full max-w-[28rem] pb-5 pr-5 lg:mx-0">
             <img
               src={portraitPhoto}
               alt="Retrato profissional da psicóloga Michelle Borges"
               loading="lazy"
               className="aspect-[4/5] w-full rounded-t-[9rem] object-cover object-top"
             />
-            <span className="absolute -bottom-5 -right-5 grid size-20 place-items-center rounded-full bg-rose-soft font-display text-2xl font-semibold text-primary">
+            <span className="absolute -bottom-3 -right-3 grid size-16 place-items-center rounded-full bg-rose-soft font-display text-2xl font-semibold text-primary sm:-bottom-4 sm:-right-4 sm:size-20">
               Ψ
             </span>
           </div>
-          <div>
+          <div className="w-full max-w-xl">
             <p className="eyebrow text-primary">Sobre a psicóloga</p>
             <h2 className="mt-5 text-4xl font-semibold text-primary sm:text-5xl">
               Muito prazer,
               <br />
               eu sou Michelle Borges.
             </h2>
-            <div className="mt-8 max-w-2xl space-y-5 text-sm leading-7 sm:text-base">
+            <div className="mt-8 space-y-5 text-sm leading-7 sm:text-base">
               <p className="font-semibold">
                 Acredito profundamente que cada pessoa carrega dentro de si a força necessária para
                 transformar a própria realidade.
@@ -380,7 +378,7 @@ function Index() {
         </div>
       </section>
 
-      <section id="como-funciona" className="py-20 sm:py-28" aria-labelledby="online-title">
+      <section id="como-funciona" className="py-16 sm:py-24" aria-labelledby="online-title">
         <div className="section-shell">
           <div className="text-center">
             <p className="eyebrow text-primary">Atendimento online</p>
@@ -390,11 +388,13 @@ function Index() {
           </div>
           <div className="mt-14 grid gap-8 md:grid-cols-3">
             {steps.map(({ number, title, icon: Icon, text }) => (
-              <article key={number} className="relative border-t border-primary pt-8">
-                <span className="font-display text-5xl text-rose">{number}</span>
-                <Icon className="absolute right-0 top-8 size-6 text-primary" aria-hidden="true" />
-                <h3 className="mt-7 text-2xl font-semibold text-primary">{title}</h3>
-                <p className="mt-4 text-sm leading-7">{text}</p>
+              <article key={number} className="relative flex flex-col justify-between border-t border-primary pt-8">
+                <div>
+                  <span className="font-display text-5xl text-rose">{number}</span>
+                  <Icon className="absolute right-0 top-8 size-6 text-primary" aria-hidden="true" />
+                  <h3 className="mt-7 text-2xl font-semibold text-primary">{title}</h3>
+                  <p className="mt-4 text-sm leading-7">{text}</p>
+                </div>
               </article>
             ))}
           </div>
