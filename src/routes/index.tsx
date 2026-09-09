@@ -177,7 +177,7 @@ function Index() {
         </div>
         <div className="relative mx-auto w-full max-w-[33rem] pb-5 pr-5">
           <img
-            src={consultorioPhoto.url}
+            src={consultorioPhoto}
             alt="Psicóloga Michelle Borges em seu consultório"
             className="photo-frame aspect-[4/5] w-full rounded-t-[10rem] object-cover object-center"
             fetchPriority="high"
@@ -273,7 +273,7 @@ function Index() {
         <div className="section-shell grid items-center gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div className="relative mx-auto w-full max-w-[27rem]">
             <img
-              src={portraitPhoto.url}
+              src={portraitPhoto}
               alt="Retrato profissional da psicóloga Michelle Borges"
               loading="lazy"
               className="aspect-[4/5] w-full rounded-t-[9rem] object-cover object-top"
