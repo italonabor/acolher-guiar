@@ -168,11 +168,20 @@ function Index() {
             especializado em Terapia Cognitivo-Comportamental para te guiar rumo à autonomia, alívio
             da ansiedade e bem-estar emocional.
           </p>
-          <div className="mt-9">
+          <p className="mt-6 font-display text-2xl font-semibold text-primary sm:text-3xl">
+            Dê o primeiro passo hoje: fale comigo agora pelo WhatsApp.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-4">
             <WhatsAppButton>Agendar minha sessão pelo WhatsApp</WhatsAppButton>
+            <a
+              href="#queixas"
+              className="text-sm font-bold text-primary underline underline-offset-4 hover:text-foreground"
+            >
+              Ver o que eu atendo
+            </a>
           </div>
           <p className="mt-5 text-xs font-semibold text-muted-foreground">
-            Atendimento online para todo o Brasil
+            Atendimento online para todo o Brasil · Resposta rápida no WhatsApp
           </p>
         </div>
         <div className="relative mx-auto w-full max-w-[33rem] pb-5 pr-5">
